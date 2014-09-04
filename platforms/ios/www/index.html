@@ -1,0 +1,165 @@
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1,minimum-scale=1,target-densitydpi=device-dpi" />
+        <title>Smart APP</title>
+        <link href="css/final.css" rel="stylesheet"/>
+</head>
+<body>
+        <header class="apptitle">
+            <h1>Smart App</h1>
+            </header>
+            <section data-role="page" id ="reg" class="">
+                <!--<form>--> 
+                Enter your username and pin<br><br>
+                Username: <input type="text" id="inpt" name="username"> <br><br>
+                Pin: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id= "inpt1" name="pin"><br><br>
+                <button id="save" type="submit">Register</button> 
+                <!-- </form>-->  
+            </section>
+             <div id="loading" class="hide">  
+            <img src="img/loading.gif" alt="Processing"/>
+            </div>
+<section data-role="page" id ="home" class="">
+            <ul class="active">
+            <li class="tmp"><a href="#temperature" data-role="link"><img class="icon" src="img/Temperature.svg"><br>Temperature</a></li>
+            <li class="lgt"><a href="#lights" data-role="link"><img class="icon" src="img/Lights.svg"><br>Lights</a></li>
+            <li class="dlock"><a href="#DoorLocks" data-role="link"><img class="icon" src="img/DoorLocks.svg"><br>Door Locks</a></li>
+            <li class="glock"><a href="#GarageLocks" data-role="link"><img class="icon" src="img/GarageLock.svg"><br>Garage</a></li>
+            <li class="ASys"><a href="#AlarmSystem" data-role="link"><img class="icon" src="img/AlarmSystem.svg"><br>Alarm System</a></li>
+            <li class="sApp"><a href="#SmartAppliances" data-role="link"><img class="icon" src="img/SmartAppliances.svg"><br>Smart Appliances</a></li>
+
+</ul>
+</section>
+      
+<section data-role="page" id ="temperature" class=""> 
+            <!--<button id="back" type="submit">Back</button> -->
+            <a href="#home" data-role="link" id="h">Back</a>
+            <h5>You can Turn Off/On Appliances</h5>
+            <div class="formbox">
+            <input class="t" type="checkbox" name="Fan" id="prop-1" value="" data-role="chk" />
+            <label for="prop-1">Fan</label>
+            </div>
+            <div class="formbox">
+            <input class="t" type="checkbox" name="AirFilter" id="prop-2" value="" data-role="chk" />
+            <label for="prop-2">Air Filter</label>
+            </div>
+            <div class="formbox">
+            <input class="t" type="checkbox" name="Heat" id="prop-3" value="" data-role="chk" />
+            <label for="prop-3">Heat</label>
+            </div>
+            <div class="formbox">
+            <input class="t" type="checkbox" name="Cool" id="prop-4" value="" data-role="chk" />
+            <label for="prop-4">Cool</label>
+            </div>
+            <div class="formbox">
+            <button id="svd">-</button> 
+            <input class="t" type="number" name="SetPoint" id="prop-20" value="" data-role="chk" />
+            <label for="prop-20">Set Point</label>
+            <button id="set">+</button> 
+            </div>
+
+</section>
+
+<section data-role="page" id ="lights" class="">   
+            <!--<button id="Out" type="submit" >Back</button> -->
+              <a href="#home" data-role="link" id="h">Back</a>
+              <h5>Here you can Turn Off/On your lights</h5>
+            <!--<form name="toggleForm" action="#" method="post" accept-charset="utf-8">-->
+            <div class="formbox">
+            <input class="l" type="checkbox" name="FrontOutside" id="prop-6" value="" data-role="chk" />
+            <label for="prop-6">Front Outside</label>
+            </div>
+            <div class="formbox">
+            <input class="l" type="checkbox" name="BackOutside" id="prop-7" value=""  data-role="chk" />
+            <label for="prop-7">Back Outside</label>
+            </div>
+            <div class="formbox">
+            <input class="l" type="checkbox" name="LivingRoom" id="prop-8" value="" data-role="chk"  />
+            <label for="prop-8">Living Room</label>
+            </div>
+            <div class="formbox">
+            <input class="l" type="checkbox" name="Kitchen" id="prop-9" value="" data-role="chk" />
+            <label for="prop-9">Kitchen</label>
+            </div>
+            <div class="formbox">
+            <input class="l" type="checkbox" name="MasterBedroom" id="prop-10" value="" data-role="chk" />
+            <label for="prop-10">Master Bedroom</label>
+            </div>
+            <div class="formbox">
+            <input class="l" type="checkbox" name="FrontHall" id="prop-11" value="" data-role="chk" />
+            <label for="prop-11">Front Hall</label>
+            </div>   
+<!--</form>-->
+</section>
+
+<section data-role="page" id ="DoorLocks" class="">
+            <!--<button id="Go" type="submit">Back</button>-->
+                 <a href="#home" data-role="link" id="h">Back</a>
+                 <h5>Here you can Turn Off/On your Door Locks</h5>
+            <!--<form name="toggleForm" action="#" method="post" accept-charset="utf-8">-->
+              <div class="formbox">
+            <input class="dl" type="checkbox" name="FrontDoorLocks" id="prop-15" value="" data-role="chk" />
+            <label for="prop-15">Front Door Locks</label>
+            </div>
+            <div class="formbox">
+            <input class="dl" type="checkbox" name="BackDoorLocks" id="prop-16" value="" data-role="chk" />
+            <label for="prop-16">Back Door Locks</label>
+            </div>
+            <div class="formbox">
+            <input class="dl" type="checkbox" name="SideDoor" id="prop-17" value=""  data-role="chk" />
+            <label for="prop-17">Side Door</label>
+            </div>         
+</section>
+            
+            <section data-role="page" id ="GarageLocks" class="">
+                <a href="#home" data-role="link" id="h">Back</a>
+                <h5>Here you can Turn Off/On your Garage Locks</h5>
+             <div class="formbox">
+            <input class="Gl" type="checkbox" name="Main Door" id="prop-5" value="" data-role="chk" />
+            <label for="prop-5">Main Door</label>
+            </div>
+</section>
+            
+<section data-role="page" id="AlarmSystem" class="">
+          <!--  <button id="Clear" type="submit">Back</button> -->
+            <a href="#home" data-role="link" id="h">Back</a>
+            <h5>Here you can Turn Off/On your Alarm System</h5>
+             <div class="formbox">
+            <input class="AS" type="checkbox" name="AlarmEnabled" id="prop-19" value="" data-role="chk" />
+            <label for="prop-19">Alarm Enabled</label>
+            </div>
+            
+</section>
+            
+<section data-role="page" id ="SmartAppliances" class="">
+            <!-- <button id="Cleared" type="submit">Back</button>--> 
+               <a href="#home" data-role="link" id="h">Back</a>
+                <h5>Here you can Turn Off/On your Smart Appliances</h5>
+            <div class="formbox">
+            <input class="SA" type="checkbox" name="CoffeeMaker" id="prop-12" value="" data-role="chk" />
+            <label for="prop-12">Coffee Maker</label>
+            </div>
+            <div class="formbox">
+            <input class="SA" type="checkbox" name="SmartTV" id="prop-13" value="" data-role="chk" />
+            <label for="prop-13">Smart TV</label>
+            </div>
+            <div class="formbox">
+            <input class="SA" type="checkbox" name="WashingMachine" id="prop-14" value="" data-role="chk" />
+            <label for="prop-14">Washing Machine</label>
+            </div>
+             <div class="formbox">
+            <input class="SA" type="checkbox" name="SkylightBlinds" id="prop-18" value=""  data-role="chk" />
+            <label for="prop-18">Skylight Blinds</label>
+            </div>
+            
+
+</section>
+
+</body>
+           <script type="text/javascript" src="cordova.js"></script>
+			<script src="js/jquery-1.11.0.min.js"></script>
+            <script src="js/final.js"></script>
+</html>
